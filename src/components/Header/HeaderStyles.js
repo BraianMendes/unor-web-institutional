@@ -43,7 +43,7 @@ export const Div1 = styled.div`
 `;
 
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
+  grid-area: 1 / 2 / 1 / 5;
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -66,8 +66,8 @@ export const Div2 = styled.div`
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: end;
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;

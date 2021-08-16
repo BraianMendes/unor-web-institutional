@@ -1,7 +1,9 @@
-import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import styled from "styled-components";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
+import Button from "../../styles/GlobalComponents/Button";
 
 import {
   Container,
@@ -12,6 +14,10 @@ import {
   NavLink,
   SocialIcons,
 } from "./HeaderStyles";
+
+const ButtonCTA = styled(Button)`
+  margin: 0 !important;
+`;
 
 const Header = () => {
   const [sticky, setSticky] = useState(false);
@@ -49,26 +55,37 @@ const Header = () => {
             </Link>
           </li>
           <li>
+            <Link href="#about">
+              <NavLink>Sobre</NavLink>
+            </Link>
+          </li>
+          <li>
             <Link href="#tech">
               <NavLink>Tecnologias</NavLink>
             </Link>
           </li>
           <li>
-            <Link href="#about">
-              <NavLink>Sobre</NavLink>
+            <Link href="#tech">
+              <NavLink>Parceiros</NavLink>
+            </Link>
+          </li>
+          <li>
+            <Link href="#tech">
+              <NavLink>Clientes</NavLink>
             </Link>
           </li>
         </Div2>
         <Div3>
-          <SocialIcons href="https://google.com">
+          {/* <SocialIcons href="https://google.com">
             <AiFillGithub size="3rem" />
-          </SocialIcons>
-          <SocialIcons href="https://google.com">
+          </SocialIcons> */}
+          {/* <SocialIcons href="https://google.com">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
           <SocialIcons href="https://google.com">
             <AiFillInstagram size="3rem" />
-          </SocialIcons>
+          </SocialIcons> */}
+          <ButtonCTA alt>Contratar</ButtonCTA>
         </Div3>
       </Insidecontainer>
     </Container>

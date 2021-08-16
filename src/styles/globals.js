@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import { normalize } from 'styled-normalize';
+import { createGlobalStyle } from "styled-components";
+import { normalize } from "styled-normalize";
 
 const GlobalStyles = createGlobalStyle`
   ${normalize};
@@ -15,15 +15,37 @@ const GlobalStyles = createGlobalStyle`
 
   }
   body {
-    font-family: ${props => props.theme.fonts.main};
+    font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
-    background: ${props => props.theme.colors.background1};
-    color: ${props => props.theme.colors.primary1};
+    background: ${(props) => props.theme.colors.background1};
+    color: ${(props) => props.theme.colors.primary1};
     cursor: default;
 
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-button {
+      display: none;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #000;
+      border-radius: 30px;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+      background-color: #000;
+      border-radius: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #FFFFFF;
+      border-radius: 10px;
+    }
   }
   h1,h2,h3,h4,h5,h6,button {
-    font-family: ${props => props.theme.fonts.title};
+    font-family: ${(props) => props.theme.fonts.title};
   }
   a {
     text-decoration: none;
