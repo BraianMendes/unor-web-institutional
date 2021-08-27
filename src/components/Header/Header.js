@@ -6,6 +6,7 @@ import { DiCssdeck } from "react-icons/di";
 import Button from "../../styles/GlobalComponents/Button";
 
 import {
+  Img,
   Container,
   Insidecontainer,
   Div1,
@@ -44,7 +45,7 @@ const Header = () => {
             <a
               style={{ display: "flex", alignItems: "center", color: "white" }}
             >
-              <DiCssdeck size="3rem" /> <span>UNOR</span>
+              <Img src="/images/logo_gradiente.png" />
             </a>
           </Link>
         </Div1>
@@ -85,7 +86,7 @@ const Header = () => {
           <SocialIcons href="https://google.com">
             <AiFillInstagram size="3rem" />
           </SocialIcons> */}
-          <ButtonCTA alt>Contratar</ButtonCTA>
+          <a href="https://wa.me/37998603864"><ButtonCTA alt>Contratar</ButtonCTA></a>
         </Div3>
       </Insidecontainer>
     </Container>

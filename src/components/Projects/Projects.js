@@ -55,7 +55,7 @@ const Projects = () => (
               <ExternalLinks href={p.source}>Source</ExternalLinks>
             </UtilityList> */}
             <ButtonCTA>
-              <Button alt>Contratar</Button>
+              <a href="https://wa.me/37998603864"><Button alt>Contratar</Button></a>
             </ButtonCTA>
           </BlogCard>
         );

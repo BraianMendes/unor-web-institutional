@@ -20,7 +20,7 @@ const Hero = (props) => (
           negócios brasileiros. Desenvolvemos soluções em tecnologia
           da informação e marketing digital para sua empresa.
         </SectionText>
-        <Button onClick={props.handleClick}>Contratar</Button>
+        <a href="https://wa.me/37998603864"><Button onClick={props.handleClick}>Contratar</Button></a>
       </LeftSection>
     </Section>
   </>

@@ -1,6 +1,10 @@
 import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
 
+export const Img = styled.img`
+  height: 2rem;
+`
+
 export const Container = styled.div`
   padding: 1.2rem;
   position: -webkit-sticky; /* Safari */
