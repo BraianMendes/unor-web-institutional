@@ -61,11 +61,13 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="#tech">
-              <NavLink>Tecnologias</NavLink>
-            </Link>
+            <a href="https://medium.com/@unor.social">
+              <Link href="https://medium.com/@unor.social">
+                <NavLink>Blog</NavLink>
+              </Link>
+            </a>
           </li>
-          <li>
+          {/* <li>
             <Link href="#tech">
               <NavLink>Parceiros</NavLink>
             </Link>
@@ -74,7 +76,7 @@ const Header = () => {
             <Link href="#tech">
               <NavLink>Clientes</NavLink>
             </Link>
-          </li>
+          </li> */}
         </Div2>
         <Div3>
           {/* <SocialIcons href="https://google.com">
@@ -86,7 +88,9 @@ const Header = () => {
           <SocialIcons href="https://google.com">
             <AiFillInstagram size="3rem" />
           </SocialIcons> */}
-          <a href="https://wa.me/37998603864"><ButtonCTA alt>Contratar</ButtonCTA></a>
+          <a href="https://wa.me/37998603864">
+            <ButtonCTA alt>Contratar</ButtonCTA>
+          </a>
         </Div3>
       </Insidecontainer>
     </Container>

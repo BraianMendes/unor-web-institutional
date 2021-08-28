@@ -47,7 +47,7 @@ export const Div1 = styled.div`
 `;
 
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 1 / 5;
+  grid-area: 1 / 3 / 1 / 5;
   display: flex;
   justify-content: space-around;
   align-content: center;
