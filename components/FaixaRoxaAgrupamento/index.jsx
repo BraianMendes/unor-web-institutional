@@ -3,38 +3,51 @@ import Design from "../Design";
 import styled from "styled-components";
 import { OpensansNormalWhite15px } from "../../styledMixins";
 
-
 function FaixaRoxaAgrupamento(props) {
-  const { bg, shadow, siteIcon, text10, notbook, designProps, design2Props, design3Props } = props;
+  const {
+    bg,
+    shadow,
+    siteIcon,
+    text10,
+    notbook,
+    designProps,
+    design2Props,
+    design3Props,
+  } = props;
 
   return (
     <FaixaRoxaAgrupamento1>
       <OverlapGroup6>
         <OverlapGroup1>
           <OverlapGroup>
-            <Bg src={bg} />
             <ComputerMockup>
               <Shadow src={shadow} />
             </ComputerMockup>
           </OverlapGroup>
-          <Website>
-            <SiteIcon src={siteIcon} />
-            <Text10>{text10}</Text10>
-          </Website>
-          <Design designIcon={designProps.designIcon} designEIlustrao={designProps.designEIlustrao} />
-          <Design
-            designIcon={design2Props.designIcon}
-            designEIlustrao={design2Props.designEIlustrao}
-            className={design2Props.className}
-          />
-          <Design
-            designIcon={design3Props.designIcon}
-            designEIlustrao={design3Props.designEIlustrao}
-            className={design3Props.className}
-          />
+          <StyledDesignDiv>
+            <Website>
+              <SiteIcon src={siteIcon} />
+              <Text10>{text10}</Text10>
+            </Website>
+            <Design
+              designIcon={designProps.designIcon}
+              designEIlustrao={designProps.designEIlustrao}
+            />
+            <Design
+              designIcon={design2Props.designIcon}
+              designEIlustrao={design2Props.designEIlustrao}
+              className={design2Props.className}
+            />
+            <Design
+              designIcon={design3Props.designIcon}
+              designEIlustrao={design3Props.designEIlustrao}
+              className={design3Props.className}
+            />
+          </StyledDesignDiv>
         </OverlapGroup1>
         <Notbook src={notbook} />
       </OverlapGroup6>
+      <Bg src={bg} />
     </FaixaRoxaAgrupamento1>
   );
 }
@@ -47,6 +60,13 @@ const FaixaRoxaAgrupamento1 = styled.div`
   display: flex;
   align-items: flex-start;
   min-width: 1280px;
+
+  @media screen and (max-width: 2560px) {
+    left: 0;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const OverlapGroup6 = styled.div`
@@ -54,6 +74,11 @@ const OverlapGroup6 = styled.div`
   height: 938px;
   position: relative;
   margin-top: 0;
+  z-index: 10;
+
+  @media screen and (max-width: 2560px) {
+    /* width: 100%; */
+  }
 `;
 
 const OverlapGroup1 = styled.div`
@@ -62,6 +87,12 @@ const OverlapGroup1 = styled.div`
   height: 768px;
   top: 170px;
   left: 0;
+  display: flex;
+
+  @media screen and (max-width: 2560px) {
+    left: 0;
+    width: 100%;
+  }
 `;
 
 const OverlapGroup = styled.div`
@@ -70,15 +101,24 @@ const OverlapGroup = styled.div`
   height: 768px;
   top: 0;
   left: 0;
+
+  @media screen and (max-width: 2560px) {
+    width: 100%;
+  }
 `;
 
 const Bg = styled.img`
   position: absolute;
   width: 1280px;
   height: 481px;
-  top: 287px;
+  top: 440px;
   left: 0;
   object-fit: cover;
+  z-index: 0;
+
+  @media screen and (max-width: 2560px) {
+    width: 100%;
+  }
 `;
 
 const ComputerMockup = styled.div`
@@ -110,7 +150,7 @@ const Website = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 167px;
+  height: 84px;
 `;
 
 const SiteIcon = styled.img`
@@ -137,6 +177,20 @@ const Notbook = styled.img`
   top: 0;
   left: 547px;
   object-fit: cover;
+`;
+
+const StyledDesignDiv = styled.div`
+  width: 100%;
+  padding-top: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  div {
+    left: 0;
+    position: unset;
+  }
 `;
 
 export default FaixaRoxaAgrupamento;

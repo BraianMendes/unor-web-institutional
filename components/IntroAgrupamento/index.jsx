@@ -31,6 +31,11 @@ const IntroAgrupamento1 = styled.div`
   flex-direction: column;
   align-items: flex-start;
   min-height: 503px;
+
+  @media screen and (max-width: 2560px) {
+    left: 5%;
+    /* width: 100vw; */
+  }
 `;
 
 const Text13 = styled.div`

@@ -1,9 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-
 function Backgrund(props) {
-  const { tintaAzul, tintaVermelha1, tintaVermelha2, elipse3, elipse2, elipse1 } = props;
+  const {
+    tintaAzul,
+    tintaVermelha1,
+    tintaVermelha2,
+    elipse3,
+    elipse2,
+    elipse1,
+  } = props;
 
   return (
     <Backgrund1>
@@ -30,12 +36,20 @@ const Backgrund1 = styled.div`
   flex-direction: column;
   align-items: flex-start;
   min-height: 2820px;
+
+  @media screen and (max-width: 2560px) {
+    width: 100vw;
+  }
 `;
 
 const OverlapGroup1 = styled.div`
   width: 1280px;
   height: 677px;
   position: relative;
+
+  @media screen and (max-width: 2560px) {
+    width: 100vw;
+  }
 `;
 
 const TintaAzul = styled.img`
@@ -45,6 +59,10 @@ const TintaAzul = styled.img`
   top: 0;
   left: 0;
   object-fit: cover;
+
+  @media screen and (max-width: 2560px) {
+    width: 100vw;
+  }
 `;
 
 const TintaVermelha1 = styled.img`
@@ -54,6 +72,10 @@ const TintaVermelha1 = styled.img`
   top: 0;
   left: 0;
   object-fit: cover;
+
+  @media screen and (max-width: 2560px) {
+    width: 100vw;
+  }
 `;
 
 const TintaVermelha2 = styled.img`
@@ -61,6 +83,10 @@ const TintaVermelha2 = styled.img`
   height: 677px;
   margin-top: 257px;
   object-fit: cover;
+
+  @media screen and (max-width: 2560px) {
+    width: 100vw;
+  }
 `;
 
 const OverlapGroup = styled.div`
@@ -69,6 +95,12 @@ const OverlapGroup = styled.div`
   position: relative;
   margin-top: 82px;
   margin-left: -50.99px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 2560px) {
+    width: 100vw;
+  }
 `;
 
 const Elipse3 = styled.img`

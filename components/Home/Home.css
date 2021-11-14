@@ -3,7 +3,7 @@
   background-color: var(--black);
   display: flex;
   flex-direction: column;
-  height: 4872px;
+  height: 100%;
   overflow: hidden;
   position: relative;
   width: 1280px;

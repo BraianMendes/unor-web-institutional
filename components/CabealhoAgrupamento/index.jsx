@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { SpartanBlackConcrete37px, RubikLightWhite15px } from "../../styledMixins";
-
+import {
+  SpartanBlackConcrete37px,
+  RubikLightWhite15px,
+} from "../../styledMixins";
 
 function CabealhoAgrupamento(props) {
   const { className } = props;
@@ -10,7 +12,10 @@ function CabealhoAgrupamento(props) {
   return (
     <CabealhoAgrupamento1 className={`cabealho-agrupamento ${className || ""}`}>
       <CabealhoAgrupamento2 className="cabealho-agrupamento-1">
-        <LogoRoxoAzul className="logo-roxo-azul" src="/img/logo-roxo-azul-1@1x.png" />
+        <LogoRoxoAzul
+          className="logo-roxo-azul"
+          src="/img/logo-roxo-azul-1@1x.png"
+        />
         <Unor className="unor">
           <span className="span0-1 spartan-extra-bold-concrete-37px">unor</span>
           <span className="span1-1 spartan-black-concrete-20px">.</span>
@@ -33,9 +38,16 @@ function CabealhoAgrupamento(props) {
 }
 
 const CabealhoAgrupamento1 = styled.div`
-  width: 1280px;
+  position: fixed;
+  min-width: 1280px;
+  width: 100%;
   height: 60px;
   display: flex;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  display: flex;
+  justify-content: space-between;
 
   &.cabealho-agrupamento.cabealho-agrupamento-2 {
     position: absolute;
@@ -48,7 +60,7 @@ const CabealhoAgrupamento2 = styled.div`
   flex: 1;
   display: flex;
   padding: 0 32px;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   min-width: 1280px;
   backdrop-filter: blur(50px) brightness(50%);

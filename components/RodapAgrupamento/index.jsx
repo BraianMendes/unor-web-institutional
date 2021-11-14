@@ -9,7 +9,6 @@ import {
   RubikLightWhite15px,
 } from "../../styledMixins";
 
-
 function RodapAgrupamento(props) {
   const { instagramBrands1, className } = props;
 
@@ -18,13 +17,21 @@ function RodapAgrupamento(props) {
       <FlexRow className="flex-row-3">
         <FlexCol className="flex-col-3">
           <FlexRow1 className="flex-row-4">
-            <LogoRoxoAzul className="logo-roxo-azul-1" src="/img/logo-roxo-azul-2@1x.png" />
+            <LogoRoxoAzul
+              className="logo-roxo-azul-1"
+              src="/img/logo-roxo-azul-2@1x.png"
+            />
             <Title className="title">
-              <span className="span0-5 spartan-extra-bold-concrete-66px">unor</span>
+              <span className="span0-5 spartan-extra-bold-concrete-66px">
+                unor
+              </span>
               <span className="span1-5 spartan-black-concrete-36px">.</span>
             </Title>
           </FlexRow1>
-          <Text1 className="text-1">A agência espacial feita para te ajudar a explorar o universo digital</Text1>
+          <Text1 className="text-1">
+            A agência espacial feita para te ajudar a explorar o universo
+            digital
+          </Text1>
         </FlexCol>
         <FlexCol1 className="flex-col-4">
           <Pginas className="pginas">Páginas</Pginas>
@@ -41,7 +48,9 @@ function RodapAgrupamento(props) {
           <Link to="/servicos">
             <SOBRE className="s-ervios">
               <span className="span0-8 rubik-light-pink-swan-15px">S</span>
-              <span className="span1-8 rubik-light-pink-swan-15px">erviços</span>
+              <span className="span1-8 rubik-light-pink-swan-15px">
+                erviços
+              </span>
             </SOBRE>
           </Link>
         </FlexCol1>
@@ -57,15 +66,23 @@ function RodapAgrupamento(props) {
       </FlexRow>
       <FlexRow2 className="flex-row-5">
         <OverlapGroup3 className="overlap-group3">
-          <FacebookFBrands1 className="facebook-f-brands-1" src="/img/facebook-f-brands--1--1@1x.png" />
+          <FacebookFBrands1
+            className="facebook-f-brands-1"
+            src="/img/facebook-f-brands--1--1@1x.png"
+          />
         </OverlapGroup3>
         <OverlapGroup2 className="overlap-group2">
-          <InstagramBrands1 className="instagram-brands-1" src={instagramBrands1} />
+          <InstagramBrands1
+            className="instagram-brands-1"
+            src={instagramBrands1}
+          />
         </OverlapGroup2>
         <Link to="/politica-de-privacidade" className="align-self-flex-start">
           <Text2 className="text-2">
             <span className="span0-9 rubik-light-pink-swan-15px">P</span>
-            <span className="span1-9 rubik-light-pink-swan-15px">olítica de privacidade</span>
+            <span className="span1-9 rubik-light-pink-swan-15px">
+              olítica de privacidade
+            </span>
           </Text2>
         </Link>
       </FlexRow2>
@@ -93,6 +110,10 @@ const RodapAgrupamento1 = styled.div`
 
   &.rodap-agrupamento.rodap-agrupamento-3 {
     margin-top: 121px;
+  }
+
+  @media screen and (max-width: 2560px) {
+    width: 100vw;
   }
 `;
 

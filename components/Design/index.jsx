@@ -2,14 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { OpensansNormalWhite15px } from "../../styledMixins";
 
-
 function Design(props) {
   const { designIcon, designEIlustrao, className } = props;
 
   return (
     <Design1 className={`design ${className || ""}`}>
       <DesignIcon className="design-icon" src={designIcon} />
-      <DesignEIlustrao className="design-e-ilustrao">{designEIlustrao}</DesignEIlustrao>
+      <DesignEIlustrao className="design-e-ilustrao">
+        {designEIlustrao}
+      </DesignEIlustrao>
     </Design1>
   );
 }
@@ -22,9 +23,9 @@ const Design1 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 84px;
+  height: 84px;
 
-  &.design.internet-marketing {
+  /* &.design.internet-marketing {
     left: 685px;
     min-height: 83px;
   }
@@ -32,7 +33,7 @@ const Design1 = styled.div`
   &.design.app {
     left: 926px;
     min-height: 109px;
-  }
+  } */
 `;
 
 const DesignIcon = styled.img`

@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { RalewaySemiBoldWhite18px, RubikNormalWhite18px } from "../../styledMixins";
-
+import {
+  RalewaySemiBoldWhite18px,
+  RubikNormalWhite18px,
+} from "../../styledMixins";
 
 function FraseAgrupamento(props) {
   const { text5, name, linha4 } = props;
@@ -26,6 +28,11 @@ const FraseAgrupamento1 = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 166px;
+
+  @media screen and (max-width: 2560px) {
+    left: 0;
+    width: 100%;
+  }
 `;
 
 const Text5 = styled.div`

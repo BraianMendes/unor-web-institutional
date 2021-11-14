@@ -63,6 +63,11 @@ const QuemSomosAgrupamento1 = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 612px;
+
+  @media screen and (max-width: 2560px) {
+    left: 0;
+    width: 100vw;
+  }
 `;
 
 const QuemSomos = styled.div`

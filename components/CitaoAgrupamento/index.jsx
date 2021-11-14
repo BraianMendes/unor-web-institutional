@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { RalewaySemiBoldWhite18px } from "../../styledMixins";
 
-
 function CitaoAgrupamento(props) {
   const { linha18, text12, theodereLevitt } = props;
 
@@ -25,6 +24,11 @@ const CitaoAgrupamento1 = styled.div`
   display: flex;
   align-items: flex-start;
   min-width: 224px;
+
+  @media screen and (max-width: 2560px) {
+    left: 10%;
+    /* width: 100vw; */
+  }
 `;
 
 const Linha18 = styled.img`

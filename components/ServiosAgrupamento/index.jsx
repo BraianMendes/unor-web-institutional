@@ -1,10 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import { RalewayNormalWhite15px, RalewaySemiBoldRadicalRed20px } from "../../styledMixins";
-
+import {
+  RalewayNormalWhite15px,
+  RalewaySemiBoldRadicalRed20px,
+} from "../../styledMixins";
 
 function ServiosAgrupamento(props) {
-  const { text6, text7, linha2, landingPage, text8, linha22, identidadeVisual, text9, linha23 } = props;
+  const {
+    text6,
+    text7,
+    linha2,
+    landingPage,
+    text8,
+    linha22,
+    identidadeVisual,
+    text9,
+    linha23,
+  } = props;
 
   return (
     <ServiosAgrupamento1>
@@ -37,6 +49,12 @@ const ServiosAgrupamento1 = styled.div`
   display: flex;
   align-items: flex-end;
   min-width: 1144px;
+  justify-content: center;
+
+  @media screen and (max-width: 2560px) {
+    left: 0;
+    width: 100vw;
+  }
 `;
 
 const DesenvolvimentosDeSites = styled.div`

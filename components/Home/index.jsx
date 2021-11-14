@@ -12,7 +12,11 @@ import NomeCaixa from "../NomeCaixa";
 import Componente181 from "../Componente181";
 import RodapAgrupamento from "../RodapAgrupamento";
 import styled from "styled-components";
-import { RubikBoldWhite16px, Border2pxWhite, RubikMediumWhite44px2 } from "../../styledMixins";
+import {
+  RubikBoldWhite16px,
+  Border2pxWhite,
+  RubikMediumWhite44px2,
+} from "../../styledMixins";
 import "./Home.css";
 
 function Home(props) {
@@ -43,7 +47,7 @@ function Home(props) {
 
   return (
     <div className="container-center-horizontal">
-      <div className="home screen">
+      <StyledContainer className="home screen">
         <CabealhoAgrupamento />
         <OverlapGroup7>
           <Backgrund
@@ -63,7 +67,9 @@ function Home(props) {
           <ServiosAgrupamento {...serviosAgrupamentoProps} />
           <PeaOSeuServioAgrupamento
             peaOSeuServio={peaOSeuServioAgrupamentoProps.peaOSeuServio}
-            trabalhamosNoDesen={peaOSeuServioAgrupamentoProps.trabalhamosNoDesen}
+            trabalhamosNoDesen={
+              peaOSeuServioAgrupamentoProps.trabalhamosNoDesen
+            }
             peaUmTrabalho={peaOSeuServioAgrupamentoProps.peaUmTrabalho}
             listaDeServios={peaOSeuServioAgrupamentoProps.listaDeServios}
           />
@@ -92,7 +98,10 @@ function Home(props) {
             <span className="rubik-medium-radical-red-44px">{spanText4}</span>
             <span className="rubik-medium-white-44px">{spanText5}</span>
           </ComoPodemosAjudar>
-          <NomeCaixa inputType={nomeCaixaProps.inputType} inputPlaceholder={nomeCaixaProps.inputPlaceholder} />
+          <NomeCaixa
+            inputType={nomeCaixaProps.inputType}
+            inputPlaceholder={nomeCaixaProps.inputPlaceholder}
+          />
           <NomeCaixa
             inputType={nomeCaixa2Props.inputType}
             inputPlaceholder={nomeCaixa2Props.inputPlaceholder}
@@ -104,23 +113,40 @@ function Home(props) {
             className={nomeCaixa3Props.className}
           />
           <MensagemCaixa>
-            <Mensagem name="mensagem-1" placeholder={inputPlaceholder} type={inputType} required />
+            <Mensagem
+              name="mensagem-1"
+              placeholder={inputPlaceholder}
+              type={inputType}
+              required
+            />
           </MensagemCaixa>
           <ButtonENVIAR>
             <ENVIAR>{enviar}</ENVIAR>
           </ButtonENVIAR>
         </Grupo94>
         <Componente181 {...componente181Props} />
-        <RodapAgrupamento instagramBrands1={rodapAgrupamentoProps.instagramBrands1} />
-      </div>
+        <RodapAgrupamento
+          instagramBrands1={rodapAgrupamentoProps.instagramBrands1}
+        />
+      </StyledContainer>
     </div>
   );
 }
+
+const StyledContainer = styled.div`
+  @media screen and (max-width: 2560px) {
+    width: 100vw;
+  }
+`;
 
 const OverlapGroup7 = styled.div`
   width: 1280px;
   height: 2820px;
   position: relative;
+
+  @media screen and (max-width: 2560px) {
+    width: 100vw;
+  }
 `;
 
 const Grupo94 = styled.div`
