@@ -1,0 +1,10 @@
+.sobre {
+  align-items: flex-start;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  height: 1829px;
+  position: relative;
+  width: 1280px;
+}
+

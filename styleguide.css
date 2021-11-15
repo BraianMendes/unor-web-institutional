@@ -1,0 +1,31 @@
+:root { 
+  --black: #000000;
+  --bon-jour: #e2e2e2;
+  --concrete: #f2f2f2;
+  --eerie-black: #1a1821;
+  --eerie-black-2: #1d1d1d;
+  --mirage: #1c1b26;
+  --pink-swan: #bababc;
+  --plump-purple: #5835a8;
+  --purple-heart: #6e42d2;
+  --purple-heart-2: #6e43d3;
+  --purple-heart-3: #643cbf;
+  --purple-heart-4: #6d43d2;
+  --radical-red: #ff1e5d;
+  --sasquatch-socks: #ff407a;
+  --seashell: #f1f1f1;
+  --white: #ffffff;
+ 
+  --font-size-l: 37px;
+  --font-size-m: 36px;
+  --font-size-s: 20px;
+  --font-size-xl: 44px;
+  --font-size-xs: 18px;
+  --font-size-xxl: 47px;
+  --font-size-xxs: 15px;
+ 
+  --font-family-open_sans: "Open Sans", Helvetica;
+  --font-family-raleway: "Raleway", Helvetica;
+  --font-family-rubik: "Rubik", Helvetica;
+  --font-family-spartan: "Spartan", Helvetica;
+}
