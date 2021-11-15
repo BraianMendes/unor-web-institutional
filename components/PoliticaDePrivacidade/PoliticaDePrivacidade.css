@@ -1,0 +1,10 @@
+.politica-de-privacidade {
+  align-items: center;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  height: 7976px;
+  position: relative;
+  width: 1280px;
+}
+
