@@ -1,0 +1,430 @@
+@media screen and (max-width: 1280px) {
+    .circulo-esquerdo {
+        transform: scale(90%);
+    }
+    .circulo-central {
+        transform: scale(90%);
+        left: 20%;
+    }
+    .circulo-maior {
+        transform: scale(90%);
+    }
+    .circulo-da-direita {
+        transform: scale(90%);
+    }
+    .portifolio {
+        width: 70%;
+        margin: 0 auto;
+        height: fit-content;
+    }
+    .vantagens {
+        margin-top: 120px;
+    }
+    .left-content {
+        width: 400px;
+    }
+    .right-content {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .portifolio {
+        width: 90%;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .circulo-esquerdo {
+        transform: scale(80%);
+    }
+    .circulo-central {
+        transform: scale(80%);
+        left: 15%;
+    }
+    .circulo-maior {
+        transform: scale(80%);
+        opacity: .65;
+    }
+    .circulo-da-direita {
+        transform: scale(80%);
+    }
+    .left-division {
+        margin-left: 2%;
+    }
+    .nano {
+        width: 420px;
+        margin-right: 20px;
+    }
+    .crescimento {
+        width: 95%;
+        margin-top: 210px;
+    }
+    .left-content {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .left-content .btn-secundary {
+        margin-left: unset;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .intro {
+        transform: unset;
+        top: 30%;
+    }
+    .crescimento {
+        height: fit-content;
+    }
+    .portifolio {
+        width: 100%;
+    }
+    .left-content {
+        width: 95%;
+    }
+    .right-content {
+        height: 360px;
+        width: 500px;
+        margin-top: 0;
+    }
+    .portifolio{
+        height: fit-content;
+    }
+    .portifolio .base-text {
+        text-align: justify;
+    }
+    #notebook {
+        margin-top: 0;
+        height: 380px;
+    }
+    .vantagens {
+        margin-top: 50px;
+        height: fit-content;
+        width: 95%;
+    }
+    .vantagens .base-text {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 928px) {
+    .background {
+        height: 815px;
+    }
+    .circulo-esquerdo {
+        transform: scale(70%);
+    }
+    .circulo-central {
+        transform: scale(70%);
+        left: 15%;
+        display: none;
+    }
+    .circulo-maior {
+        transform: scale(70%);
+        right: 0;
+        top: 332px;
+    }
+    .circulo-da-direita {
+        transform: scale(70%);
+    }
+    .intro {
+        transform: unset;
+        top: 140px;
+    }
+    #title1 {
+        font-size: var(--font-size-l);
+    }
+    .base-text {
+        font-size: 15px;
+        height: fit-content;
+    }
+    .btn-primary {
+        margin: 0 auto;
+    }
+    .nano {
+        margin-top: 60px;
+    }
+    .footer {
+        justify-content: space-around;
+    }
+    .div-third {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left-division {
+        width: 85%;
+    }
+    .title2 {
+        font-size: var(--font-size-l);
+        margin: 0 5%;
+    }
+    #midsection-text {
+        width: 85%;
+        text-align: justify;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .title3 {
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .lines {
+        width: 500px;
+    }
+      
+    .line-individual {
+        width: 500px;
+    }
+    .graph {
+        width: 400px;
+    }
+    .graph-horizontal {
+        width: 400px;
+    }
+    .bars {
+        width: 40px;
+    }
+
+    #title1 {
+        width: 80%;
+    }
+    .unor {
+        display: none;
+    }
+    .nano {
+        width: 400px;
+    }
+    .crescimento, .portifolio, .vantagens {
+        width: 90%;
+    }
+    #title4 {
+        text-align: center;
+        font-size: var(--font-size-l);
+        margin-top: 0;
+    }
+    .left-content {
+        width: 85%;
+    }
+    .vantagens {
+        height: fit-content;
+    }
+    .vantagens .base-text {
+        width: 85%;
+        margin: 50px auto;
+    }
+    .footer {
+        flex-wrap: wrap;
+        align-items: center;
+        height: fit-content;
+        padding: 30px 0;
+    }
+    .div-one {
+        width: 300px;
+        align-items: center;
+        height: fit-content;
+    }
+    .div-two {
+        width: 300px;
+        height: fit-content;
+    }
+    #span-description, #span-about {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .lines {
+        width: 400px;
+    }
+      
+    .line-individual {
+        width: 400px;
+    }
+    .graph {
+        width: 350px;
+        margin-left: 50px;
+    }
+    .graph-horizontal {
+        transform: scale(90%);
+    }
+    .horiz-label {
+        transform: unset;
+    }
+    .bars {
+        width: 35px;
+    }
+    .right-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .vantagens {
+        margin-top: 0px;
+    }
+    #notebook {
+        margin-top: 0;
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .background {
+        height: 805px;
+    }
+
+    #title1 {
+        width: 90%;
+    }
+    .nano {
+        width: 330px;
+    }
+    .crescimento {
+        margin-top: 200px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .graph {
+        width: 350px;
+        margin-left: 30px;
+    }
+    .lines {
+        width: 370px;
+    }
+      
+    .line-individual {
+        width: 370px;
+    }
+    .bars {
+        width: 30px;
+        font-size: 7px;
+    }
+    .graph-horizontal {
+        transform: scale(80%);
+        width: 320px;
+        margin: 0 15%;
+    }
+    .horiz-label {
+        margin-bottom: 24px;
+        margin-left: -64px;
+        transform: unset;
+        font-size: 10px;
+    }
+
+    #bar-horizontal-1 {
+        width: 319.2px;
+      }
+      #bar-horizontal-2 {
+        width: 305.8px;
+      }
+      #bar-horizontal-3 {
+        width: 140px;
+      }
+      #bar-horizontal-4 {
+        width: 28px;
+      }
+      #bar-horizontal-5 {
+        width: 134.4px;
+      }
+
+      @keyframes horizontal-1 {
+        0%   {width: 0px;}
+        100% {width: 319.2px;}
+      }
+      @keyframes horizontal-2 {
+        0%   {width: 0px;}
+        100% {width: 305.8px;}
+      }
+      @keyframes horizontal-3 {
+        0%   {width: 0px;}
+        100% {width: 140px;}
+      }
+      @keyframes horizontal-4 {
+        0%   {width: 0px;}
+        100% {width: 28px;}
+      }
+      @keyframes horizontal-5 {
+        0%   {width: 0px;}
+        100% {width: 134.4px;}
+      }
+
+
+    .right-content {
+        height: 290px;
+        width: 300px;
+    }
+    .portifolio, .crescimento, .vantagens {
+        width: 100%;
+    }
+    .vantagens {
+        margin-top: 50px;
+    }
+    .vantagens .base-text {
+        width: 85%;
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .crescimento {
+        margin-top: 260px;
+    }
+    .bars {
+        width: 30px;
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .background {
+        height: 855px;
+    }
+    #title1 {
+        width: 90%;
+    }
+    .nano {
+        width: 300px;
+    }
+    .crescimento {
+        margin-top: 240px;
+    }
+    .graph-horizontal {
+        transform: scale(73%);
+        width: 300px;
+        margin: 0 7%;
+    }
+    .horiz-label {
+        margin-bottom: 24px;
+        margin-left: -66px;
+        transform: unset;
+        font-size: 11px;
+    }
+    .lines {
+        transform: scale(80%);
+    }
+    .btn-secundary {
+        width: 200px;
+        font-size: 14px;
+    }
+    #notebook {
+        width: 310px;
+        height: 190px;
+    }
+    .vantagens {
+        margin-top: 0;
+    }
+    .vantagens .title2 {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,167 @@
+:root {
+    --black: 
+  rgba(0, 0, 0, 1);
+    --blue-charcoal: 
+  rgba(0, 4, 29, 1);
+    --canary: 
+  rgba(0, 34, 255, 1);
+    --absolute-zero: 
+  rgba(0, 52, 191, 1);
+    --tangaroa: 
+  rgba(5, 27, 62, 1);
+    --astronaut: 
+  rgba(34, 56, 115, 1);
+    --azure: 
+  rgba(75, 95, 160, 1);
+    --dove-gray: 
+  rgba(112, 112, 112, 1);
+    --silver: 
+  rgba(190, 190, 190, 1);
+    --white: 
+  rgba(255, 255, 255, 1);
+    --red-christmas:
+  rgba(91, 0, 0, 1);
+  
+    --font-size-xxxs: 9px;
+    --font-size-xxs: 11px;
+    --font-size-xs: 14px;
+    --font-size-s: 15px;
+    --font-size-m: 16px;
+    --font-size-l: 34px;
+    --font-size-xl: 40px;
+  
+    --font-family-rubik: "Rubik";
+    --font-family-spartan: "Spartan";
+}
+
+/* Classes */
+
+.rubik-light-white-14px {
+    color: var(--white);
+    font-family: var(--font-family-rubik);
+    font-size: var(--font-size-xs);
+    font-weight: 300;
+    font-style: normal;
+  }
+  .spartan-bold-white-16px {
+    color: var(--white);
+    font-family: var(--font-family-spartan);
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .spartan-bold-white-69px {
+    color: var(--white);
+    font-family: var(--font-family-spartan);
+    font-size: 69px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .spartan-bold-azure-11px {
+    color: var(--azure);
+    font-family: var(--font-family-spartan);
+    font-size: var(--font-size-xxs);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .spartan-bold-black-50px {
+    color: var(--black);
+    font-family: var(--font-family-spartan);
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  /* .border-1px-dove-gray {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--dove-gray);
+  } */
+  .spartan-bold-white-40px {
+    color: var(--white);
+    font-family: var(--font-family-spartan);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .spartan-bold-silver-9px {
+    color: var(--silver);
+    font-family: var(--font-family-spartan);
+    font-size: var(--font-size-xxxs);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .spartan-bold-black-9px {
+    color: var(--black);
+    font-family: var(--font-family-spartan);
+    font-size: var(--font-size-xxxs);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .spartan-bold-white-11px {
+    color: var(--white);
+    font-family: var(--font-family-spartan);
+    font-size: var(--font-size-xxs);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .spartan-bold-black-15px {
+    color: var(--black);
+    font-family: var(--font-family-spartan);
+    font-size: var(--font-size-s);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .spartan-medium-white-14px {
+    color: var(--white);
+    font-family: var(--font-family-spartan);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .spartan-bold-white-34px {
+    color: var(--white);
+    font-family: var(--font-family-spartan);
+    font-size: var(--font-size-l);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .spartan-medium-white-16px {
+    color: var(--white);
+    font-family: var(--font-family-spartan);
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .spartan-bold-tangaroa-18px {
+    color: var(--tangaroa);
+    font-family: var(--font-family-spartan);
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .rubik-normal-black-20px {
+    color: var(--black);
+    font-family: var(--font-family-rubik);
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .spartan-bold-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-spartan);
+    font-size: var(--font-size-xxxs);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .spartan-medium-black-16px {
+    color: var(--black);
+    font-family: var(--font-family-spartan);
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .border-2px-black {
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--black);
+  }
